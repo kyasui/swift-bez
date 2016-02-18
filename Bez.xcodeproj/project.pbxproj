@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		5190337B1C7241E900D6F5AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190337A1C7241E900D6F5AF /* AppDelegate.swift */; };
-		5190337D1C7241E900D6F5AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190337C1C7241E900D6F5AF /* ViewController.swift */; };
 		519033801C7241E900D6F5AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5190337E1C7241E900D6F5AF /* Main.storyboard */; };
 		519033821C7241E900D6F5AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519033811C7241E900D6F5AF /* Assets.xcassets */; };
 		519033851C7241E900D6F5AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519033831C7241E900D6F5AF /* LaunchScreen.storyboard */; };
+		519033941C7245E500D6F5AF /* BezGalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519033931C7245E500D6F5AF /* BezGalleryCollectionViewController.swift */; };
+		519033971C72465300D6F5AF /* BezProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519033961C72465300D6F5AF /* BezProject.swift */; };
+		5190339B1C724B5000D6F5AF /* Placeholder.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5190339A1C724B5000D6F5AF /* Placeholder.xcassets */; };
+		5190339E1C724DE300D6F5AF /* BezProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190339D1C724DE300D6F5AF /* BezProjectCollectionViewCell.swift */; };
+		519033A41C726DAF00D6F5AF /* BezProjectEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519033A31C726DAF00D6F5AF /* BezProjectEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		519033771C7241E900D6F5AF /* Bez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5190337A1C7241E900D6F5AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5190337C1C7241E900D6F5AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5190337F1C7241E900D6F5AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		519033811C7241E900D6F5AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		519033811C7241E900D6F5AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Bez/Assets.xcassets; sourceTree = "<group>"; };
 		519033841C7241E900D6F5AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		519033861C7241E900D6F5AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		519033931C7245E500D6F5AF /* BezGalleryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezGalleryCollectionViewController.swift; sourceTree = "<group>"; };
+		519033961C72465300D6F5AF /* BezProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezProject.swift; sourceTree = "<group>"; };
+		5190339A1C724B5000D6F5AF /* Placeholder.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Placeholder.xcassets; sourceTree = "<group>"; };
+		5190339D1C724DE300D6F5AF /* BezProjectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezProjectCollectionViewCell.swift; sourceTree = "<group>"; };
+		519033A31C726DAF00D6F5AF /* BezProjectEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezProjectEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,11 +43,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361BA5F8C1BEA4A067771E7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5190336E1C7241E900D6F5AF = {
 			isa = PBXGroup;
 			children = (
 				519033791C7241E900D6F5AF /* Bez */,
 				519033781C7241E900D6F5AF /* Products */,
+				361BA5F8C1BEA4A067771E7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +70,75 @@
 		519033791C7241E900D6F5AF /* Bez */ = {
 			isa = PBXGroup;
 			children = (
-				5190337A1C7241E900D6F5AF /* AppDelegate.swift */,
-				5190337C1C7241E900D6F5AF /* ViewController.swift */,
-				5190337E1C7241E900D6F5AF /* Main.storyboard */,
-				519033811C7241E900D6F5AF /* Assets.xcassets */,
-				519033831C7241E900D6F5AF /* LaunchScreen.storyboard */,
-				519033861C7241E900D6F5AF /* Info.plist */,
+				5190339C1C724DCA00D6F5AF /* Views */,
+				519033951C72464000D6F5AF /* Models */,
+				519033911C72456300D6F5AF /* Controllers */,
+				5190338E1C72426600D6F5AF /* Assets */,
+				519033901C72454A00D6F5AF /* Other */,
+				5190338F1C72452500D6F5AF /* Storyboards */,
+				519033921C72457600D6F5AF /* Supporting Files */,
 			);
 			path = Bez;
+			sourceTree = "<group>";
+		};
+		5190338E1C72426600D6F5AF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				519033811C7241E900D6F5AF /* Assets.xcassets */,
+				5190339A1C724B5000D6F5AF /* Placeholder.xcassets */,
+			);
+			name = Assets;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5190338F1C72452500D6F5AF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5190337E1C7241E900D6F5AF /* Main.storyboard */,
+				519033831C7241E900D6F5AF /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		519033901C72454A00D6F5AF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5190337A1C7241E900D6F5AF /* AppDelegate.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		519033911C72456300D6F5AF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				519033931C7245E500D6F5AF /* BezGalleryCollectionViewController.swift */,
+				519033A31C726DAF00D6F5AF /* BezProjectEditViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		519033921C72457600D6F5AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				519033861C7241E900D6F5AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		519033951C72464000D6F5AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				519033961C72465300D6F5AF /* BezProject.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5190339C1C724DCA00D6F5AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5190339D1C724DE300D6F5AF /* BezProjectCollectionViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +203,7 @@
 				519033851C7241E900D6F5AF /* LaunchScreen.storyboard in Resources */,
 				519033821C7241E900D6F5AF /* Assets.xcassets in Resources */,
 				519033801C7241E900D6F5AF /* Main.storyboard in Resources */,
+				5190339B1C724B5000D6F5AF /* Placeholder.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5190337D1C7241E900D6F5AF /* ViewController.swift in Sources */,
+				5190339E1C724DE300D6F5AF /* BezProjectCollectionViewCell.swift in Sources */,
+				519033971C72465300D6F5AF /* BezProject.swift in Sources */,
+				519033A41C726DAF00D6F5AF /* BezProjectEditViewController.swift in Sources */,
 				5190337B1C7241E900D6F5AF /* AppDelegate.swift in Sources */,
+				519033941C7245E500D6F5AF /* BezGalleryCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +366,7 @@
 				5190338B1C7241E900D6F5AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
